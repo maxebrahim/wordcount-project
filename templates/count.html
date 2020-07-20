@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count</title>
+</head>
+<body>
+
+<h1>Your Text have {{ count }} length.</h1>
+
+<a href="{% url 'home' %}">Home</a>
+
+<h2>Your Text: </h2>
+
+<h3>{{ fulltext }}</h3>
+<hr>
+
+<h1>All Word Count: </h1>
+<br>
+<ul>
+    {% for word, counter in wordCounter.items %}
+
+
+            <li>( {{ word }} ) -- {{ counter }}</li>
+
+
+    {% endfor %}
+</ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
